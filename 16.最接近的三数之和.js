@@ -8,6 +8,10 @@
  * @param {number} target
  * @return {number}
  */
+/**
+ * 暴力解法需要三层循环
+ * 此解法O(n^2)
+ */
 var threeSumClosest = function(nums, target) {
     nums.sort((item1, item2) => item1 - item2);
     let bestSum = nums[0] + nums[1] + nums[2];
