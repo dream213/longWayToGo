@@ -20,9 +20,8 @@ var lengthOfLongestSubstring = function(s) {
     let theSecondLastPositionMap = {};
     let strStart = 0;
     return s.split('').reduce(function(max, item, index) {
-        strStart = theSecondLastPositionMap[item] >= strStart ? theSecondLastPositionMap[item] + 1 : strStart; 
+        strStart = theSecondLastPositionMap[item] >= strStart ? theSecondLastPositionMap[item] + 1 : strStart;
         theSecondLastPositionMap[item] = index;
-        return Math.max(max, index-strStart+1);
+        return Math.max(max, index - strStart + 1);
     }, 0)
 };
-
