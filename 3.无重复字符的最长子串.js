@@ -6,6 +6,7 @@
 /**
  * @param {string} s
  * @return {number}
+ * 9.1;
  */
 // var lengthOfLongestSubstring = function(s) {
 //     /**
@@ -42,3 +43,4 @@ function lengthOfLongestSubstring(str) {
     }
     return max;
 }
+
